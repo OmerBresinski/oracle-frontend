@@ -14,6 +14,7 @@ const AppRouter = () => {
         <Switch>
           <KeysContextProvider>
             <Route exact path={C.ROUTES.home} component={P.Home} />
+            <Route exact path={C.ROUTES.items} component={P.Items} />
           </KeysContextProvider>
         </Switch>
       </Router>

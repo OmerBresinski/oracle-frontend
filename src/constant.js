@@ -19,16 +19,13 @@ export const COLORS = {
   secondary: "secondary",
 };
 
+export const ENDPOINTS = {
+  items: "items",
+};
+
 export const ROUTES = {
   home: "/",
-  hash: "/hash",
-  keys: "/keys",
-  block: "/block",
-  tokens: "/tokens",
-  coinbase: "/coinbase",
-  signatures: "/signatures",
-  blockchain: "/blockchain",
-  distributed: "/distributed",
+  items: "/items",
 };
 
 export const CRYPTO = {

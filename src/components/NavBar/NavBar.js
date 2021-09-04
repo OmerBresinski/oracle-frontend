@@ -49,6 +49,6 @@ const NavBar = () => {
   );
 };
 
-const TABS = ["Home"];
+const TABS = ["Home", "Items"];
 
 export default NavBar;
