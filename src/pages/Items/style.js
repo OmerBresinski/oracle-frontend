@@ -15,6 +15,7 @@ export const Content = styled.div`
   width: 100%;
   height: 100%;
   padding-block-start: 100px;
+  gap: 50px;
 `;
 
 export const Header = styled.div`
