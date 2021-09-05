@@ -21,11 +21,29 @@ export const COLORS = {
 
 export const ENDPOINTS = {
   items: "items",
+  orders: "orders",
+  receipts: "receipts",
+  warehouse: "warehouse",
+  inventory: "inventory",
+  customers: "customers",
+  orderitems: "orderitems",
+  receiptitems: "receiptitems",
+  transactions: "transactions",
+  inventoryinsufficiency: "inventoryinsufficiency",
 };
 
 export const ROUTES = {
   home: "/",
   items: "/items",
+  orders: "/orders",
+  receipts: "/receipts",
+  warehouse: "/warehouse",
+  inventory: "/inventory",
+  customers: "/customers",
+  orderitems: "/orderitems",
+  receiptitems: "/receiptitems",
+  transactions: "/transactions",
+  inventoryinsufficiency: "/inventoryinsufficiency",
 };
 
 export const CRYPTO = {

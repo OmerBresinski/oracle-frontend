@@ -1,2 +1,11 @@
 export { default as Home } from "./Home";
 export { default as Items } from "./Items";
+export { default as Orders } from "./Orders";
+export { default as Receipts } from "./Receipts";
+export { default as Customers } from "./Customers";
+export { default as Inventory } from "./Inventory";
+export { default as Warehouse } from "./Warehouse";
+export { default as OrderItems } from "./OrderItems";
+export { default as ReceiptItems } from "./ReceiptItems";
+export { default as Transactions } from "./Transactions";
+export { default as InventoryInsufficiency } from "./InventoryInsufficiency";

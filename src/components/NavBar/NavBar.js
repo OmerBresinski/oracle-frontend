@@ -15,7 +15,7 @@ const NavBar = () => {
   }, [match]);
 
   const handleChange = (_e, newValue) => {
-    const page = _e.target?.textContent?.toLowerCase();
+    const page = _e.target?.textContent?.toLowerCase()?.replace(" ", "");
     history.push(C.ROUTES[page]);
     setValue(newValue);
   };
@@ -42,13 +42,40 @@ const NavBar = () => {
         scrollButtons="auto"
       >
         {TABS.map((tab, index) => {
-          return <Tab key={index} label={tab} index={index} />;
+          console.log(tab);
+          return (
+            <Tab
+              key={index}
+              label={
+                tab === "inventoryinsufficiency"
+                  ? "Inventory Insufficiency"
+                  : tab === "receiptitems"
+                  ? "Receipt Items"
+                  : tab === "orderitems"
+                  ? "Order Items"
+                  : tab
+              }
+              index={index}
+            />
+          );
         })}
       </Tabs>
     </AppBar>
   );
 };
 
-const TABS = ["Home", "Items"];
+const TABS = [
+  "Home",
+  "items",
+  "orders",
+  "receipts",
+  "warehouse",
+  "inventory",
+  "customers",
+  "orderitems",
+  "receiptitems",
+  "transactions",
+  "inventoryinsufficiency",
+];
 
 export default NavBar;
