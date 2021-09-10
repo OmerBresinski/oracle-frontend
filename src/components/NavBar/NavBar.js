@@ -15,7 +15,11 @@ const NavBar = () => {
   }, [match]);
 
   const handleChange = (_e, newValue) => {
-    const page = _e.target?.textContent?.toLowerCase()?.replace(" ", "");
+    const page = _e.target?.textContent
+      ?.toLowerCase()
+      ?.replace(" ", "")
+      ?.replace(" ", "");
+    console.log(page);
     history.push(C.ROUTES[page]);
     setValue(newValue);
   };
@@ -42,17 +46,14 @@ const NavBar = () => {
         scrollButtons="auto"
       >
         {TABS.map((tab, index) => {
-          console.log(tab);
           return (
             <Tab
               key={index}
               label={
-                tab === "inventoryinsufficiency"
-                  ? "Inventory Insufficiency"
-                  : tab === "receiptitems"
-                  ? "Receipt Items"
-                  : tab === "orderitems"
-                  ? "Order Items"
+                tab === "inventoryreport"
+                  ? "Inventory Report"
+                  : tab === "openordersreport"
+                  ? "Open Orders Report"
                   : tab
               }
               index={index}
@@ -64,18 +65,20 @@ const NavBar = () => {
   );
 };
 
-const TABS = [
-  "Home",
-  "items",
-  "orders",
-  "receipts",
-  "warehouse",
-  "inventory",
-  "customers",
-  "orderitems",
-  "receiptitems",
-  "transactions",
-  "inventoryinsufficiency",
-];
+const TABS = ["Home", "inventoryreport", "openordersreport"];
+
+// const TABS = [
+//   "Home",
+//   "items",
+//   "orders",
+//   "receipts",
+//   "warehouse",
+//   "inventory",
+//   "customers",
+//   "orderitems",
+//   "receiptitems",
+//   "transactions",
+//   "inventoryinsufficiency",
+// ];
 
 export default NavBar;

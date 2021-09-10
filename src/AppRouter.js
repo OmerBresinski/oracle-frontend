@@ -14,7 +14,13 @@ const AppRouter = () => {
         <Switch>
           <KeysContextProvider>
             <Route exact path={C.ROUTES.home} component={P.Home} />
-            <Route exact path={C.ROUTES.items} component={P.Items} />
+            <Route exact path={C.ROUTES.inventoryreport} component={P.InventoryReport} />
+            <Route
+              exact
+              path={C.ROUTES.openordersreport}
+              component={P.OpenOrdersReport}
+            />
+            {/* <Route exact path={C.ROUTES.items} component={P.Items} />
             <Route exact path={C.ROUTES.customers} component={P.Customers} />
             <Route exact path={C.ROUTES.inventory} component={P.Inventory} />
             <Route exact path={C.ROUTES.orders} component={P.Orders} />
@@ -22,12 +28,12 @@ const AppRouter = () => {
             <Route exact path={C.ROUTES.receiptitems} component={P.ReceiptItems} />
             <Route exact path={C.ROUTES.receipts} component={P.Receipts} />
             <Route exact path={C.ROUTES.transactions} component={P.Transactions} />
-            <Route exact path={C.ROUTES.warehouse} component={P.Warehouse} />
-            <Route
+            <Route exact path={C.ROUTES.warehouse} component={P.Warehouse} /> */}
+            {/* <Route
               exact
               path={C.ROUTES.inventoryinsufficiency}
               component={P.InventoryInsufficiency}
-            />
+            /> */}
           </KeysContextProvider>
         </Switch>
       </Router>
