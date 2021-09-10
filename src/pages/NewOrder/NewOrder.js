@@ -18,6 +18,7 @@ const NewOrder = () => {
   };
 
   const handleCreateOrderClick = () => {
+    //post(order)
     setOrder({});
   };
 
