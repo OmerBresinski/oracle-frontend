@@ -8,6 +8,7 @@ export { default as Warehouse } from "./Warehouse";
 export { default as OrderItems } from "./OrderItems";
 export { default as ReceiptItems } from "./ReceiptItems";
 export { default as Transactions } from "./Transactions";
+export { default as SalesReport } from "./SalesReport";
 export { default as InventoryReport } from "./InventoryReport";
 export { default as OpenOrdersReport } from "./OpenOrdersReport";
 export { default as TransactionsReport } from "./TransactionsReport";
