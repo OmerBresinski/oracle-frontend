@@ -58,6 +58,8 @@ const NavBar = () => {
                   ? "Transactions Report"
                   : tab === "salesreport"
                   ? "Sales Report"
+                  : tab === "neworder"
+                  ? "New Order"
                   : tab
               }
               index={index}
@@ -71,6 +73,7 @@ const NavBar = () => {
 
 const TABS = [
   "Home",
+  "neworder",
   "inventoryreport",
   "openordersreport",
   "transactionsreport",

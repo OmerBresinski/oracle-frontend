@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import * as C from "constant";
 import { TextField } from "@material-ui/core";
+import * as C from "constant";
 
 const TextInput = ({
   rows,
@@ -35,6 +35,7 @@ const TextInput = ({
 
   return (
     <TextField
+      style={{ fontSize: "8px !important", fontFamily: "Cabin, Arial !important" }}
       fullWidth
       type={type}
       size={size}

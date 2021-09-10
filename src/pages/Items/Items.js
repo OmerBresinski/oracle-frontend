@@ -4,6 +4,7 @@ import Text from "components/Text";
 import Table from "components/Table";
 import * as C from "constant";
 import * as S from "./style";
+import Card from "components/Card";
 
 const Items = () => {
   const { data } = useFetch(C.ENDPOINTS.items);
