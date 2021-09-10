@@ -31,6 +31,7 @@ export const ENDPOINTS = {
   transactions: "transactions",
   inventoryreport: "inventoryreport",
   openordersreport: "openordersreport",
+  transactionsreport: "transactionsreport",
   inventoryinsufficiency: "inventoryinsufficiency",
 };
 
@@ -47,6 +48,7 @@ export const ROUTES = {
   transactions: "/transactions",
   inventoryreport: "/inventoryreport",
   openordersreport: "/openordersreport",
+  transactionsreport: "/transactionsreport",
   inventoryinsufficiency: "/inventoryinsufficiency",
 };
 

@@ -10,4 +10,5 @@ export { default as ReceiptItems } from "./ReceiptItems";
 export { default as Transactions } from "./Transactions";
 export { default as InventoryReport } from "./InventoryReport";
 export { default as OpenOrdersReport } from "./OpenOrdersReport";
+export { default as TransactionsReport } from "./TransactionsReport";
 export { default as InventoryInsufficiency } from "./InventoryInsufficiency";

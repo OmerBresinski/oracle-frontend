@@ -4,8 +4,6 @@ import axios from "axios";
 export const useFetch = (endpoint) => {
   const [data, setData] = useState();
 
-  console.log(endpoint);
-
   useEffect(() => {
     fetch();
   }, []);
