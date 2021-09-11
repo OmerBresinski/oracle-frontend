@@ -26,10 +26,10 @@ const AppRouter = () => {
               path={C.ROUTES.transactionsreport}
               component={P.TransactionsReport}
             />
-            <Route exact path={C.ROUTES.salesreport} component={P.SalesReport} />
-            {/* <Route exact path={C.ROUTES.items} component={P.Items} />
+            {/* <Route exact path={C.ROUTES.salesreport} component={P.SalesReport} />
+            <Route exact path={C.ROUTES.items} component={P.Items} /> */}
             <Route exact path={C.ROUTES.customers} component={P.Customers} />
-            <Route exact path={C.ROUTES.inventory} component={P.Inventory} />
+            {/* <Route exact path={C.ROUTES.inventory} component={P.Inventory} />
             <Route exact path={C.ROUTES.orders} component={P.Orders} />
             <Route exact path={C.ROUTES.orderitems} component={P.OrderItems} />
             <Route exact path={C.ROUTES.receiptitems} component={P.ReceiptItems} />

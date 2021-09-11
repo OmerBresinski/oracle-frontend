@@ -74,6 +74,7 @@ const NavBar = () => {
 const TABS = [
   "Home",
   "neworder",
+  "customers",
   "inventoryreport",
   "openordersreport",
   "transactionsreport",
