@@ -18,7 +18,8 @@ const NavBar = () => {
     const page = _e.target?.textContent
       ?.toLowerCase()
       ?.replace(" ", "")
-      ?.replace(" ", "");
+      ?.replace(" ", "")
+      ?.replace("shortages", "inventoryinsufficiency");
     history.push(C.ROUTES[page]);
     setValue(newValue);
   };
@@ -65,6 +66,8 @@ const NavBar = () => {
                   ? "New Receipt"
                   : tab === "cancelreceipt"
                   ? "Cancel Receipt"
+                  : tab === "inventoryinsufficiency"
+                  ? "Shortages"
                   : tab
               }
               index={index}
@@ -88,6 +91,7 @@ const TABS = [
   "openordersreport",
   "transactionsreport",
   "salesreport",
+  "inventoryinsufficiency",
 ];
 
 export default NavBar;
