@@ -10,6 +10,7 @@ export { default as ReceiptItems } from "./ReceiptItems";
 export { default as Transactions } from "./Transactions";
 export { default as NewOrder } from "./NewOrder";
 export { default as NewReceipt } from "./NewReceipt";
+export { default as CancelReceipt } from "./CancelReceipt";
 export { default as CancelOrder } from "./CancelOrder";
 export { default as SalesReport } from "./SalesReport";
 export { default as InventoryReport } from "./InventoryReport";

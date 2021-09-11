@@ -63,6 +63,8 @@ const NavBar = () => {
                   ? "Cancel Order"
                   : tab === "newreceipt"
                   ? "New Receipt"
+                  : tab === "cancelreceipt"
+                  ? "Cancel Receipt"
                   : tab
               }
               index={index}
@@ -80,25 +82,12 @@ const TABS = [
   "cancelorder",
   "customers",
   "newreceipt",
+  "cancelreceipt",
   "receipts",
   "inventoryreport",
   "openordersreport",
   "transactionsreport",
   "salesreport",
 ];
-
-// const TABS = [
-//   "Home",
-//   "items",
-//   "orders",
-//   "receipts",
-//   "warehouse",
-//   "inventory",
-//   "customers",
-//   "orderitems",
-//   "receiptitems",
-//   "transactions",
-//   "inventoryinsufficiency",
-// ];
 
 export default NavBar;
