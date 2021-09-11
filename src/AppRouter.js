@@ -15,6 +15,7 @@ const AppRouter = () => {
           <KeysContextProvider>
             <Route exact path={C.ROUTES.home} component={P.Home} />
             <Route exact path={C.ROUTES.neworder} component={P.NewOrder} />
+            <Route exact path={C.ROUTES.cancelorder} component={P.CancelOrder} />
             <Route exact path={C.ROUTES.inventoryreport} component={P.InventoryReport} />
             <Route
               exact
@@ -26,8 +27,8 @@ const AppRouter = () => {
               path={C.ROUTES.transactionsreport}
               component={P.TransactionsReport}
             />
-            {/* <Route exact path={C.ROUTES.salesreport} component={P.SalesReport} />
-            <Route exact path={C.ROUTES.items} component={P.Items} /> */}
+            <Route exact path={C.ROUTES.salesreport} component={P.SalesReport} />
+            {/*<Route exact path={C.ROUTES.items} component={P.Items} /> */}
             <Route exact path={C.ROUTES.customers} component={P.Customers} />
             {/* <Route exact path={C.ROUTES.inventory} component={P.Inventory} />
             <Route exact path={C.ROUTES.orders} component={P.Orders} />

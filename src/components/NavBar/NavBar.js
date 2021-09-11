@@ -19,7 +19,6 @@ const NavBar = () => {
       ?.toLowerCase()
       ?.replace(" ", "")
       ?.replace(" ", "");
-    console.log(page);
     history.push(C.ROUTES[page]);
     setValue(newValue);
   };
@@ -60,6 +59,8 @@ const NavBar = () => {
                   ? "Sales Report"
                   : tab === "neworder"
                   ? "New Order"
+                  : tab === "cancelorder"
+                  ? "Cancel Order"
                   : tab
               }
               index={index}
@@ -74,6 +75,7 @@ const NavBar = () => {
 const TABS = [
   "Home",
   "neworder",
+  "cancelorder",
   "customers",
   "inventoryreport",
   "openordersreport",
