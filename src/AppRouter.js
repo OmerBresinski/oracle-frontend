@@ -16,6 +16,7 @@ const AppRouter = () => {
             <Route exact path={C.ROUTES.home} component={P.Home} />
             <Route exact path={C.ROUTES.neworder} component={P.NewOrder} />
             <Route exact path={C.ROUTES.cancelorder} component={P.CancelOrder} />
+            <Route exact path={C.ROUTES.newreceipt} component={P.NewReceipt} />
             <Route exact path={C.ROUTES.inventoryreport} component={P.InventoryReport} />
             <Route
               exact

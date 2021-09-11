@@ -61,6 +61,8 @@ const NavBar = () => {
                   ? "New Order"
                   : tab === "cancelorder"
                   ? "Cancel Order"
+                  : tab === "newreceipt"
+                  ? "New Receipt"
                   : tab
               }
               index={index}
@@ -76,6 +78,7 @@ const TABS = [
   "Home",
   "neworder",
   "cancelorder",
+  "newreceipt",
   "customers",
   "inventoryreport",
   "openordersreport",
