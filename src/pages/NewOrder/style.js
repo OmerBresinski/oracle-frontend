@@ -18,6 +18,13 @@ export const Content = styled.div`
   gap: 20px;
 `;
 
+export const NewOrderInputs = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 280px;
+`;
+
 export const ItemsWrapper = styled.div`
   height: 70vh;
   padding: 10px;
