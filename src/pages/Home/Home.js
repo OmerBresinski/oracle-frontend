@@ -11,6 +11,12 @@ const Home = () => {
             Oracle
           </Text>
         </S.Header>
+        <Text size="32px" bold>
+          Omer Bresinski - 305237224
+        </Text>
+        <Text size="32px" bold>
+          Guy Sulami - 313589632
+        </Text>
       </S.Content>
     </S.Home>
   );

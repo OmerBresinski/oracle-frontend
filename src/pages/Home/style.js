@@ -15,8 +15,11 @@ export const Content = styled.div`
   width: 100%;
   height: 100%;
   padding-block-start: 100px;
+  gap: 20px;
 `;
 
 export const Header = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
